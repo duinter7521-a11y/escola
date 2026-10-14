@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("introduz um numero de um a 12:");
+    scanf("%d",&a);
+    switch (a) {
+        case 1:
+            printf("Janeiro");
+            break;
+        case 2:
+            printf("Fevereiro");
+            break;
+        case 3:
+            printf("Março");
+            break;
+        case 4:
+            printf("Abril\n");
+            break;
+        case 5:
+            printf("Maio\n");
+            break;
+        case 6:
+            printf("Junho\n");
+            break;
+        case 7:
+            printf("Julho\n");
+            break;
+        case 8:
+            printf("Agosto\n");
+            break;
+        case 9:
+            printf("Setembro\n");
+            break;
+        case 10:
+            printf("Outubro\n");
+            break;
+        case 11:
+            printf("Novembro\n");
+            break;
+        case 12:
+            printf("Dezembro\n");
+            break;
+        default:
+            printf("Número inválido! Digite um número entre 1 e 12.\n");
+    }
+
+    return 0;
+}
