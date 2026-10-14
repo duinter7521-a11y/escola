@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    float a,b;
+    printf("introduz dois numeros:");
+    scanf("%f %f",&a,&b);
+    if (a>b)
+        printf("O %f é maior que o %f",a,b);
+       else if (a<b)
+           printf("O %f é maior que o %f",b,a);
+    else 
+        printf("Os numeros são iguais");
+}
