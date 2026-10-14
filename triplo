@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float a,resultado;
+    printf("Insere o teu numero e vê o triplo dele:");
+    scanf("%f",&a);
+    resultado = a*3;
+    printf("O triplo do teu numero é:%f",resultado);
+}
