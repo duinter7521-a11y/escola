@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float area_base,h,resultado;
+    printf("coloca por ordem respetiva a area da base e a altura do triangulo:");
+    scanf("%f %f",&area_base,&h);
+    resultado = (area_base*h)/2;
+    printf("A area do teu triangulo é:%f",resultado);
+}
