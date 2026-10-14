@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+int main() {
+    int nota;
+
+    printf("Digite a sua nota (0-20): ");
+    scanf("%d", &nota);
+
+    switch (nota) {
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+            printf("Classificação: Muito Insuficiente\n");
+            break;
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 9:
+            printf("Classificação: Insuficiente\n");
+            break;
+        case 10:
+        case 11:
+        case 12:
+        case 13:
+        case 14:
+            printf("Classificação: Suficiente\n");
+            break;
+        case 15:
+        case 16:
+        case 17:
+            printf("Classificação: Bom\n");
+            break;
+        case 18:
+        case 19:
+        case 20:
+            printf("Classificação: Muito Bom\n");
+            break;
+        default:
+            printf("Nota inválida! Digite um número entre 0 e 20.\n");
+    }
+
+    return 0;
+}
