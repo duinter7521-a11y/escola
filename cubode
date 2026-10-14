@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float b,resultado;
+    printf("Insere o teu numero e vê o cubo dele:");
+    scanf("%f",&b);
+    resultado = pow(b,3);
+    printf("O triplo do teu numero é:%f",resultado);
+}
