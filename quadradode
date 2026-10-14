@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float x, resultado;
+    printf("Vamos calcular o quandrado do teu numero\n");
+    printf("Por favor introduz um numero positivo:");
+    scanf("%f",&x);
+    resultado = pow(x,2);
+    printf("O quandrado do teu numero e:%f",resultado);
+}
