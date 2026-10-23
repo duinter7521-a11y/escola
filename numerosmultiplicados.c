@@ -5,6 +5,7 @@ int main()
 	float prod=1, valor;
 	
 	for (int i=1; i<=10; i++){
+		printf("Introduza o %d número:", i);
 		scanf("%f",&valor);
 		prod = prod * valor;
 		printf("%f\n",prod);
