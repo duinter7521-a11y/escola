@@ -12,8 +12,16 @@ int main()
 		printf("Programa 3 - Media de 3 temperaturas 1-0\n");
 		printf("PRograma 4 - Boas Vindas\n");
 		printf("Programa 5 - Numero Par ou Impar\n");
-		printf("Programa 6 - \n");
-
+		printf("Programa 6 - Quadrado do Input\n");
+		printf("Programa 7 - Triplo do Input\n");
+		printf("Programa 8 - Numero ao Cubo\n");
+		printf("Programa 9 - Area do Triangulo\n");
+		printf("Programa 10 - Calculadora IMC\n");
+		printf("Programa 11 - Comparador de numeros\n");
+		printf("Programa 12 - Numeros dos meses\n");
+		printf("Programa 13 - Calculadora Lite\n");
+		printf("Programa 14 - Reconhecedor de Notas Escolares\n");
+		
 		scanf("%d",&escolha);
 		switch (escolha){
 			case 1: system("cls");
@@ -40,11 +48,11 @@ int main()
 			break;
 			case 3: system("cls");
 					float t1,t2,t3, med;
-					printf("Olá, aqui podes obter a media das temperaturas da tua zona\n");
+					printf("Ola, aqui podes obter a media das temperaturas da tua zona\n");
 					printf("Por favor introduz os valores de temperatura dos ultimos 3 dias\n");  
 					scanf("%f %f %f",&t1 ,&t2 ,&t3);
 					med=(t1 + t2 + t3) / 3;
-					printf("A temperatura media dos ultimos 3 dias na tua zona é %f",med);
+					printf("A temperatura media dos ultimos 3 dias na tua zona e %f",med);
 					getchar();
 					getchar();
 					system("cls");
@@ -60,7 +68,7 @@ int main()
 			break;
 			case 5: system("cls");
 					int numero;
-					printf("Olá, vamos descobrir se o teu número é par ou impar\n");
+					printf("Ola, vamos descobrir se o teu número e par ou impar\n");
 					printf("Introduz o teu número:");
 					scanf("%d", &numero);
 					int resto = numero % 2;
@@ -82,6 +90,65 @@ int main()
 					getchar();
 					getchar();
 					system("cls");
+			break;
+			case 7: system("cls");
+					int triplo ,total;
+					printf("Incere o numero para fazer o triplo:\n");
+					scanf("%d",&triplo);
+					total = 3*triplo;
+					printf("O resultado e:%d",total);
+					getchar();
+					getchar();
+					system("cls");
+					
+			break;
+			case 8: system("cls");
+					int cubo ,total_cubo;
+					printf("Incere o numero para fazer o cubo:\n");
+					scanf("%d",&cubo);
+					total_cubo = pow(cubo,3);
+					printf("O resdultado e:%d",total_cubo);
+					getchar();
+					getchar();
+					system("cls");
+					
+			break;
+			case 9: system("cls");
+					int area_base,altura,total_triangulo;
+					printf("Introduz respetivamente a area da base e a altura do teu triangulo:\n");
+					scanf("%d %d",&area_base,&altura);
+					total_triangulo = (area_base*altura)/2;
+					printf("O teu triagulo tem %d unidades de area (ua)",total_triangulo);
+					getchar();
+					getchar();
+					system("cls");
+					
+			break;
+			case 10: system("cls");
+					 float peso,altura_imc,resultado_imc;
+					 printf("coloca por ordem respetiva o teu peso e a tua altura(metros):");
+					 scanf("%f %f",&peso,&altura_imc);
+					 resultado_imc = peso/(pow(altura_imc,2));
+					 printf("O teu IMC é:%f",resultado_imc);
+					 getchar();
+					 getchar();
+					 system("cls");
+					 
+			break;
+			case 11: system("cls");
+					 float primeiro,segundo;
+					 printf("introduz dois numeros:");
+					 scanf("%f %f",&primeiro,&segundo);
+					 if (primeiro>segundo)
+						 printf("O %f e maior que o %f",primeiro,segundo);
+					 else if (primeiro<segundo)
+						 printf("O %f e maior que o %f",segundo,primeiro);
+					 else 
+						 printf("Os numeros são iguais");
+					 getchar();
+					 getchar();
+					 system("cls");
+					 
 			break;
 		}
 	}
