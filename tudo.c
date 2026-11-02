@@ -342,8 +342,7 @@ int main()
 					 system("cls");
 					 
 			break;
-			default: 
-					 break;
+			
 		}
 	}
 	printf("A desligar ...");
